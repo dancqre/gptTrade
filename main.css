@@ -106,7 +106,7 @@ img{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-left:10%;
+	padding-left:10%;
 	border-left: 1px solid white;
 }
 .btn-flex{
@@ -694,8 +694,16 @@ a:hover{
 		display: flex;
 		justify-content: center;
 	}
-	
+	.footer-form-img {
+		max-height: 200px !important;
+		max-width: 210px !important;		
+	}
+	.benefits-img {
+		max-width: 140px !important;
+		max-height: 160px !important;
+	}
 }
+/*SLIDER*/
 .swiper-slide img{
 	width:58%;
 	object-fit: cover;
