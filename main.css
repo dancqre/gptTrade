@@ -658,8 +658,8 @@ a:hover{
 		display: none;
 	}
 	.benefits-img{
-		width: 200px;
-		height: 220px;
+		width: 200px !important;
+		height: 220px !important;
 	}
 	.team-card {
 		display: flex;
@@ -668,8 +668,8 @@ a:hover{
 		margin-left: 35%;
 	}
 	.footer-form-img{
-		height: 266px;
-		width: 281px;
+		height: 266px !important;
+		width: 281px !important;
 	}
 }
 @media (max-width: 600px){
@@ -695,12 +695,12 @@ a:hover{
 		justify-content: center;
 	}
 	.footer-form-img {
-		height: 200px ;
-		width: 210px ;		
+		height: 200px !important;
+		width: 210px !important;		
 	}
 	.benefits-img {
-		width: 160px ;
-		height: 180px ;
+		width: 160px !important;
+		height: 180px !important;
 	}
 }
 /*SLIDER*/
