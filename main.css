@@ -666,7 +666,7 @@ a:hover{
 	.nav-list{
 		display: none;
 	}
-	.benefits-img{
+	.img-ai-div{
 		width: 200px !important;
 		height: 220px !important;
 	}
@@ -676,9 +676,10 @@ a:hover{
 		transform: translate(0,0);
 		margin-left: 35%;
 	}
-	.footer-form-img{
-		height: 266px !important;
-		width: 281px !important;
+	.manager-sec-row{
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media (max-width: 600px){
@@ -703,11 +704,11 @@ a:hover{
 		display: flex;
 		justify-content: center;
 	}
-	.footer-form-img {
+	.manager-sec-row {
 		height: 200px !important;
 		width: 210px !important;		
 	}
-	.benefits-img {
+	.img-ai-div{
 		width: 140px !important;
 		height: 160px !important;
 	}
