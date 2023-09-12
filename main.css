@@ -617,6 +617,18 @@ a:hover{
 		flex-direction: column;
 		justify-content: center;
 	}
+	p{
+		padding: 0 5%;
+	}
+	h1,h2,h3,h4,h5{
+		padding: 0 5%;
+	}
+	.header-half2{
+		padding-left: 0 !important;
+	}
+	.header-btn{
+		margin-left:10%;
+	}
 	.header-half1{
 		margin-left:10%;
 		margin-bottom: 75px;
@@ -699,8 +711,8 @@ a:hover{
 		width: 210px !important;		
 	}
 	.benefits-img {
-		width: 160px !important;
-		height: 180px !important;
+		width: 140px !important;
+		height: 160px !important;
 	}
 }
 /*SLIDER*/
@@ -715,4 +727,76 @@ a:hover{
 .swiper-button-prev, .swiper-rtl .swiper-button-next{
 	right: 140px !important;
 	left: auto;
+}
+@media (max-width: 800px) {
+	.nav-list{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap:10%;
+		font-size: 30px;
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: -100%;
+		height: 100vh;
+		width: 90%;	
+		overflow: auto;
+		padding: 20px 0;
+		background-color: rgb(36, 35, 60);
+		transition: left 0.2s;
+	}
+
+	.nav-list._active {
+		left: 0;
+	}
+}
+
+.menu-icon {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	.menu-icon {
+		display: block;
+		height: 18px;
+		width: 30px;
+		position: relative;
+		cursor: pointer;
+		z-index: 5;
+	}
+
+	.menu-icon span {
+		transition: all 0.3s ease 0s;
+		top: calc(50% - 1px);
+		left: 0;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+	}
+
+	.menu-icon span:first-child {
+		top: 0;
+	}
+
+	.menu-icon span:last-child {
+		top: auto;
+		bottom: 0;
+	}
+
+	.menu-icon._active span {
+		transform: scale(0);
+	}
+
+	.menu-icon._active span:first-child {
+		transform: rotate(-45deg);
+		top: calc(50% - 1px);
+	}
+
+	.menu-icon._active span:last-child {
+		transform: rotate(45deg);
+		bottom: calc(50% - 1px);
+	}
 }

@@ -52,7 +52,21 @@ btnPrev.onclick = function () {
 	const nextSlide = slider.querySelector(`[data-index="${nextSlideIndex}"]`);
 	nextSlide.classList.remove('none');
 	nextSlide.setAttribute('data-active', '');
-}	
+}
+
+//Burger
+
+const burger = document.querySelector('.menu-icon');
+const menu = document.querySelector('.nav-list');
+const body = document.body;
+
+if (burger && menu) {
+	burger.addEventListener('click', () => {
+		burger.classList.toggle('_active');
+		menu.classList.toggle('_active');
+		body.classList.toggle('_lock');
+	})
+}
 
 //Nav
 
