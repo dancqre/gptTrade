@@ -14,6 +14,9 @@
 body{
 	overflow-x: hidden;
 }
+body._lock{
+	overflow: hidden;
+} 
 .container{
 	max-width: 1276px;
 	margin: 0 auto;
