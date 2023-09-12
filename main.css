@@ -15,7 +15,7 @@ body{
 	overflow-x: hidden;
 }
 body._lock{
-	overflow: hidden;
+	overflow-y: hidden;
 } 
 .container{
 	max-width: 1276px;
