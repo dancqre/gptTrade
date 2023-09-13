@@ -85,6 +85,8 @@ if (menuLinks.length > 0) {
 				top: gotoBlockValue,
 				behavior: "smooth"
 			});
+			body.classList.remove('_lock');
+			menu.classList.remove('_active');
 			e.preventDefault();
 		} 
 	}
