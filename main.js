@@ -87,6 +87,7 @@ if (menuLinks.length > 0) {
 			});
 			body.classList.remove('_lock');
 			menu.classList.remove('_active');
+			burger.classList.remove('_active');
 			e.preventDefault();
 		} 
 	}
